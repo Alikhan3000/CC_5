@@ -40,3 +40,14 @@ cartItems.unshift("Strings");   //added a new item at the beginning
 cartItems.shift();              //removed the first item 
 
 console.log(`Cart Items: ${cartItems}`);    //logged the updated array 
+
+
+//Task 4: Map Method
+
+let prices = [100, 200, 300];   //declared an array with 3 different prices
+
+function discountPrice(prices){             //used .map() method in a function that applies a 10% discount to each price 
+return prices.map(price => price * 0.9)};
+
+let finalPrices = discountPrice(prices);    //declared a variable to store the output from discount price function
+console.log(`Discount Prices: $${finalPrices}`); //logged the discounted prices
