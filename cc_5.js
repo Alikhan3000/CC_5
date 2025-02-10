@@ -60,3 +60,13 @@ let inventory = [0, 5, 10, 20, 1];  //declared an object with 5 product quantiti
 let updated_inventory = inventory.filter(stock => stock > 0);   //use .filter() method to remove products for which stock is 0
 
 console.log(`Updated Inventory: ${updated_inventory}`); //logged the array with updated stock quantities
+
+
+//Task 6: Reduce Method
+
+let sales = [500, 300, 200, 400];   //declared an array with sales numbers
+
+let total_revenue = sales.reduce((sum, sale) => sum + sale, 0); //used .reduce() method to sum up all the numbers in the array
+
+console.log(`Total Revenue: $${total_revenue}`);    //logged total revenue to the console
+
