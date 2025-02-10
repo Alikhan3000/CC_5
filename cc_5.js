@@ -29,3 +29,14 @@ let order = {       //declared an object with 3 properties and a method inside t
 };
 
 order.displayOrder();   //called the method to log order details
+
+//Task 3: Array Manipulation (push, pop, shift, unshift)
+
+let cartItems = ["Calculator", "Pen", "Book"];  //declared an array with 3 product names
+
+cartItems.push("Guitar");   //added a new product to the array
+cartItems.pop();            //removed the last item 
+cartItems.unshift("Strings");   //added a new item at the beginning 
+cartItems.shift();              //removed the first item 
+
+console.log(`Cart Items: ${cartItems}`);    //logged the updated array 
