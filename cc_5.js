@@ -78,3 +78,18 @@ let customers = ["Alice", "Bob", "Charlie", "David"]; //declared an array with 5
 let findCustomer = customers.find(customer => customer == "Charlie");   //used .find metod to locate Charlie in the array 
 
 console.log(`Customer Name:${findCustomer}`);      // logged the customer's name
+
+
+//Task 8: Function Declaration
+
+
+
+function calculateTax(taxRate) {    //this function multiplies amount by tax rate to calculate tax amount
+    return function(amount){
+    return amount * taxRate;
+};
+}
+const fifteenTax = calculateTax(0.15); //declared a 15% tax for calculateTax output 
+
+console.log(`Calculated Tax: $${fifteenTax(1000)}`) //logged calculated tax when amount = 1000
+
