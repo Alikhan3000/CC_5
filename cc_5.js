@@ -93,3 +93,14 @@ const fifteenTax = calculateTax(0.15); //declared a 15% tax for calculateTax out
 
 console.log(`Calculated Tax: $${fifteenTax(1000)}`) //logged calculated tax when amount = 1000
 
+
+//Task 9: Function Expression
+
+let applyDiscount = function(price, discount) {    //this function multiplies price by discount rate 
+    return price * (1 - discount);
+};
+
+let discountedPrice = applyDiscount(250, 0.5); //declared $250 price and 50% discount for the function 
+
+console.log(`Discounted Price: $${discountedPrice}`);  //logged the discounted price
+
