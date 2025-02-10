@@ -104,3 +104,11 @@ let discountedPrice = applyDiscount(250, 0.5); //declared $250 price and 50% dis
 
 console.log(`Discounted Price: $${discountedPrice}`);  //logged the discounted price
 
+
+//Task 10: Arrow Function
+
+const calculatePoints =  (purchaseAmount) => purchaseAmount / 10; //arrow function that divides purchase amount by 10
+
+let total_points = calculatePoints(99); //declared a variable for the function
+
+console.log(`You have: ${Math.floor(total_points)} loyalty points`); //logged total points earned (1 point per $10 spent) and used Math.floor to return exactly 1 point for $10 
